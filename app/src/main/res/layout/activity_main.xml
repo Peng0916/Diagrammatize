@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <!--
+  DrawerLayout:抽屉布局
+  layout_gravity:抽屉的方向 (start 左侧 / end 右侧)
+
+  NavigationView:导航视图
+  -->
+  <!-- 主活动的内容视图 -->
+  <include layout="@layout/include_list_viewpager"/>
+
+  <!-- 左侧抽屉-->
+  <android.support.design.widget.NavigationView
+      android:id="@+id/nv_view"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_gravity="start"
+      android:fitsSystemWindows="true"
+      app:headerLayout="@layout/nav_header"
+      app:menu="@menu/drawer_view"
+      android:background="@drawable/navbar_bg"/>
+
+</android.support.v4.widget.DrawerLayout>

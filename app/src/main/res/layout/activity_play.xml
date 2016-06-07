@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.newer.movie.PlayActivity">
+
+    <ImageView
+        android:id="@+id/play_img"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:src="@drawable/ic_launcher" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view1"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@+id/play_img"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <TextView
+                android:id="@+id/play_moviename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:maxLines="1"
+                android:text="八月:奥色治郡"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/play_control"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/play_moviename"
+                android:layout_margin="10dp"
+                android:maxLines="1"
+                android:text="分手危机，小天使而转机？"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/play_introduce"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/play_control"
+                android:maxLines="2"
+                android:text="剧情介绍:" />
+
+            <RelativeLayout
+                android:id="@+id/play_card_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/play_introduce">
+                <ImageView
+                    android:id="@+id/play_card_bottom_ivdow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_forum"
+                    android:layout_marginLeft="40dp"/>
+                <TextView
+                    android:id="@+id/play_card_bottom_tvdow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="下载(12.3M)"
+                    android:layout_toRightOf="@+id/play_card_bottom_ivdow"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:id="@+id/play_card_bottom_ivcol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_forum"
+                    android:layout_marginLeft="240dp"/>
+                <TextView
+                    android:id="@+id/play_card_bottom_tvcol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="收藏"
+                    android:layout_toRightOf="@+id/play_card_bottom_ivcol"
+                    android:gravity="center"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

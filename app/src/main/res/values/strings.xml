@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">图解电影</string>
+
+
+    <string name="frist">推荐</string>
+    <string name="second">分类</string>
+    <string name="three">片场</string>
+</resources>

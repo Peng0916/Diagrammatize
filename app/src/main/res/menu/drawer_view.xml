@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_history"
+        android:icon="@drawable/ic_dashboard"
+        android:title="阅读历史" />
+    <item
+        android:id="@+id/nav_download"
+        android:icon="@drawable/ic_event"
+        android:title="下载管理"/>
+
+    <item
+        android:id="@+id/nav_center"
+        android:icon="@drawable/ic_headset"
+        android:title="消息中心"/>
+    <item
+        android:id="@+id/nav_pictrue"
+        android:icon="@drawable/ic_forum"
+        android:title="我的图解"/>
+
+    <item
+        android:id="@+id/nav_shop"
+        android:icon="@drawable/ic_forum"
+        android:title="电影集市"/>
+
+    <item
+        android:id="@+id/nav_movie"
+        android:icon="@drawable/ic_forum"
+        android:title="领取电影票"/>
+  </group>
+
+  <item android:title="setting">
+    <menu>
+      <item
+          android:id="@+id/nav_set"
+          android:icon="@android:drawable/ic_menu_set_as"
+          android:title="设置"
+          />
+    </menu>
+  </item>
+</menu>

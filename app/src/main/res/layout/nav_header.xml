@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="200dp"
+              android:background="@drawable/bpush_top_bg"
+              android:orientation="vertical"
+              android:paddingLeft="16dp"
+              android:paddingTop="32dp">
+    <!-- 显示当前用户的图标和用户名-->
+  <de.hdodenhof.circleimageview.CircleImageView
+      android:id="@+id/image_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/ic_launcher"/>
+
+  <TextView
+      android:id="@+id/tv_username"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Username"
+      android:textColor="@android:color/white"
+      android:textSize="22sp"
+      android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/tv_hand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="伸手党 Lv1"
+        android:textSize="15sp"
+        android:layout_alignBottom="@+id/image_view"
+        android:layout_alignStart="@+id/tv_username" />
+
+     <TextView
+         android:id="@+id/tv_moneyNum"
+         android:layout_width="80dp"
+         android:layout_height="wrap_content"
+         android:text="0"
+         android:layout_below="@+id/image_view"
+         android:gravity="center"
+         android:textSize="15dp"/>
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="金币"
+        android:layout_below="@+id/tv_moneyNum"
+        android:gravity="center"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_peopleNum"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_below="@+id/image_view"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:layout_toRightOf="@+id/tv_moneyNum"/>
+    <TextView
+        android:id="@+id/tv_people"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="粉丝"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:layout_alignTop="@+id/tv_money"
+        android:layout_toEndOf="@+id/tv_money" />
+
+    <TextView
+        android:id="@+id/tv_seeNum"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:layout_toRightOf="@+id/tv_peopleNum"
+        android:layout_below="@+id/image_view"/>
+    <TextView
+        android:id="@+id/tv_see"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="关注"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:layout_toRightOf="@+id/tv_people"
+        android:layout_below="@+id/tv_seeNum"/>
+</RelativeLayout>
